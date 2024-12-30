@@ -1,0 +1,256 @@
+-------------------------------------------------- Client Side --------------------------------------------------
+
+-- User Register -- 
+
+api : http://localhost:3000/registration
+
+test date:
+
+{
+    "firstname": "darshana",
+    "lastname": "weerasooriya",
+    "email": "test@gmail.com",
+    "phonenumb": "0987655",
+    "password": "test123"
+
+}
+
+-----------------------------------------
+
+-- User Loging --
+
+api : http://localhost:3000/login
+
+Test data :
+
+{
+    "email": "test@gmail.com",
+     "password": "test123"
+
+} 
+
+-----------------------------------------
+
+-- Get User Data -- 
+
+api: http://localhost:3000/getuserlist
+
+Test data : 
+
+{
+     "email": "test@gmail.com"
+}
+
+
+-----------------------------------------
+
+-- Forget Password -- 
+
+api: http://localhost:3000/forgot-password
+
+Test data :
+
+{
+     "email": "darshanaweerasooriya11@gmail.com"
+}
+
+
+-----------------------------------------
+
+-- Reset Password --
+
+api: http://localhost:3000/reset-password
+
+Test data :
+
+{
+    "token": "<token>",
+    "newPassword": "newpassword123"
+}
+
+
+-----------------------------------------
+
+-- Add Shipping Address --
+
+api: http://localhost:3000/shippingaddress
+
+Test data: 
+
+{
+    "country":"Sri lanka",
+    "firstname":"Darshana",
+    "lastname":"Weerasooriya",
+    "address":"polgahawela",
+    "apartment":"30/34A",
+    "city":"Kurunegala",
+    "state":"North Western",
+    "zipcode":"60300"
+    
+}
+
+------------------------------------------
+
+-- Add Reviews --
+
+api: http://localhost:3000/review
+
+Test data:
+
+{
+    "comment": "hiii"
+}
+
+
+
+-------------------------------------------------- Admin Side --------------------------------------------------
+
+------------------------------------------
+
+-- Admin Login --
+
+api: http://localhost:3000/api/auth/login
+
+Test data :
+
+{
+  "email": "admin@example.com",
+  "password": "admin123"
+}
+
+
+------------------------------------------
+
+-- Display shipping details --
+
+api: http://localhost:3000/getshipping
+
+Test data: 
+
+{
+   "firstname":"Darshana"
+}
+
+
+------------------------------------------
+
+-- Add Product --
+
+api: http://localhost:3000/addproduct
+
+Test data:
+
+{
+    "ptitle": "Wath",
+    "pprice": "Rs 30 000",
+    "brand": "Titan",
+    "category": "Mens watch",
+    "tag": "w01",
+    "quantity": "q12",
+    "pdescription": "Barnded brand new watch"
+
+}
+
+
+------------------------------------------
+
+-- Fetch Products --
+
+api: http://localhost:3000/getproducts
+
+------------------------------------------
+
+-- Update Product --
+
+api : http://localhost:3000/updateproduct/{id} // replace the ID with the product id 
+
+
+------------------------------------------
+
+-- Delete Product -- 
+
+api : http://localhost:3000/deleteproduct/{id}
+
+------------------------------------------
+
+-- Add Brand --
+
+api: http://localhost:3000/addbrnad
+
+Test data: 
+
+{
+    "brand": "Titan"
+}
+
+-----------------------------------------
+
+-- Add Cateogory--
+
+api :http://localhost:3000/category
+
+Test data : 
+{
+    "category":"Mens Watch"
+}
+
+----------------------------------------
+
+-- Add Post to Blog -- 
+
+api:http://localhost:3000/posting
+
+Test data:
+{
+    "title": "Test",
+    "cat": "Test",
+    "description": "Test"
+}
+
+----------------------------------------
+
+-- Display all the posts --
+
+api: http://localhost:3000/allpost
+
+----------------------------------------
+
+-- Enquiry meeting -- 
+
+api :http://localhost:3000/addenquiries
+
+Test data :
+{
+    "name": "test",
+    "mobilenum": "0123456789",
+    "email": "test@test.com",
+    "comment": "Good",
+    "status": "watch"
+   
+
+}
+
+----------------------------------------
+
+-- End data --
+
+api : http://localhost:3000/fetchartitakure
+
+------------------------------------------------------------- End -----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
